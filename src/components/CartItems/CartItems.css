@@ -1,0 +1,250 @@
+.cartitem{
+    margin: 100px 170px;
+}
+.cartitem hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitem-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 20px 10px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitem-format{
+    font-size: 17px;
+    font-weight: 500;
+}
+.carticon-product-icon{
+    height: 62px;
+}
+.cartitem-remove-icon{
+    width: 15px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.cartiems-quantity{
+    width: 60px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #ffff;
+}
+.cartitem-down{
+    display: flex;
+    margin: 100px 0;
+}
+.cartitem-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.cartitem-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.cartitem-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitem-promo-code{
+    flex:1;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cartitem-promo-code p{
+    color: #555;
+}
+.cartitem-promo-box{
+    display: flex;
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: #eaeaea;
+}
+.cartitem-promo-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 330px;
+    height: 50px;
+    cursor: text;
+}
+.cartitem-promo-box button{
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+@media screen and (min-width:1000px) and (max-width:1440px){
+    .cartitem-format-main{
+        font-size: 16px;
+    }
+    .cartitem-down{
+        margin: 50px 0;
+    }
+    .cartitem-total h1{
+       font-size: 22px;
+    }
+    .cartitem-total-item{
+       font-size: 16px;
+    }
+    .cartitem-total button{
+        width: 200px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .cartitem-promo-code{
+        font-size: 14px;
+    }
+    .cartitem-promo-box{
+        height: 38px;
+    }
+    .cartitem-promo-box input{
+        font-size: 14px;
+        height: 100%;
+    }
+    .cartitem-promo-box button{
+        height: 100%;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:999px){
+    .cartitem{
+        width: 100%;
+        margin: 100px 0;
+        padding: 0 20px;
+    }
+    .cartitem-format-main{
+        text-align: center;
+        font-size: 12px;
+        grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr 0.5fr;
+    }
+    .cartitem-format{
+        font-size: 14px;
+        text-align: center;
+    }
+    .cartitem-format p{
+        width: 100%;
+    }
+    .cartitem-down{
+        margin: 50px 0;
+    }
+    .cartitem-total h1{
+       font-size: 22px;
+    }
+    .cartitem-total-item{
+       font-size: 16px;
+    }
+    .cartitem-total button{
+        width: 200px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .cartitem-promo-code{
+        font-size: 14px;
+    }
+    .cartitem-promo-box{
+        height: 38px;
+        width: 300px;
+    }
+    .cartitem-promo-box input{
+        font-size: 14px;
+        height: 100%;
+    }
+    .cartitem-promo-box button{
+        height: 100%;
+        font-size: 12px;
+    }
+}
+@media screen and  (max-width:768px){
+    .cartitem{
+        width: 100%;
+        margin: 100px 0;
+        padding: 0 20px;
+    }
+    .cartitem-format-main{
+        text-align: center;
+        font-size: 12px;
+        grid-template-columns: 20px 50px 20px 50px 20px;
+        gap: 50px;
+    }
+    .p_name{
+        display: none;
+    }
+    .cartitem-format{
+        font-size: 14px;
+        text-align: center;
+    }
+    .cartitem-format p{
+        width: 100%;
+    }
+    .cartitem-down{
+        margin: 50px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cartitem-total{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .cartitem-total h1{
+       font-size: 22px;
+    }
+    .cartitem-total-item{
+       font-size: 16px;
+    }
+    .cartitem-total button{
+        width: 200px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .cartitem-promo-code{
+        font-size: 14px;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+    .cartitem-promo-box{
+        height: 38px;
+        width: 300px;
+    }
+    .cartitem-promo-box input{
+        font-size: 14px;
+        height: 100%;
+    }
+    .cartitem-promo-box button{
+        height: 100%;
+        font-size: 12px;
+    }
+    .cartitem-remove-icon{
+        margin-left: -5px;
+    }
+}
+@media screen and  (max-width:499px){
+    .cartitem-format-main{
+        font-size: 10px;
+        grid-template-columns: 20px 50px 20px 50px 20px;
+        gap: 35px;
+    }
+}

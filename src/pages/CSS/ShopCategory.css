@@ -1,0 +1,102 @@
+.shop-catergory-banner{
+    display: block;
+    margin: 3px auto;
+    width: 82%;
+}
+.shopcategory-indexsort{
+    display: flex;
+    margin: 40px auto;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcategory-indexsort p span{
+    font-weight: 600;
+}
+.shopcategory-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+.shopcategory-products{
+    width: 100%;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 69px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media screen and (min-width:1000px) and (max-width:1440px){
+    .shop-catergory-banner{
+        width: 72%;
+    }
+    .shopcategory-products{
+        margin:10px 30px;
+        margin-left: 70px;
+        row-gap: 30px;
+        column-gap: 10px;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 193px;
+        height: 59px;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:999px){
+    .shop-catergory-banner{
+        width: 72%;
+    }
+    .shopcategory-products{
+        margin:10px 30px;
+        margin-left: 70px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 10px;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 193px;
+        height: 59px;
+        font-size: 16px;
+    }
+}
+@media screen and  (max-width:768px){
+    .shop-catergory-banner{
+        width: 100%;
+    }
+    .shopcategory-products{
+        margin:10px 0;
+        margin-left:0;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 5px;
+        padding: 0;
+        padding-left: 5px;
+    }
+    .shopcategory-indexsort{
+        display: flex;
+        margin: 40px auto;
+        padding: 0 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 193px;
+        height: 59px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,232 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 1px 3px -2px #000;
+}
+.hamburger-icon{
+    display: none;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-logo p{
+    color: #171717;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #626262;
+}
+.nav-menu hr{
+    border: none;
+    width: 100%;
+    height: 0.2rem;
+    background-attachment: 0.8rem;
+    background: #ff4141;
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+.nav-login-cart button{
+    width: 120px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    color: #717171;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+.nav-cart-count{
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: -65px;
+    border-radius: 11px;
+    font-size: 11px;
+    background: red;
+    color: #fff;
+}
+@media screen and (min-width:1000px) and (max-width:1440px){
+    .nav-logo p{
+        font-size: 1.5rem;
+    }
+    .nav-menu{
+        font-size: 1.3rem;
+    }
+    .nav-login-cart button{
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .nav-login-cart img{
+        width: 90%;
+    }
+    .nav-cart-count{
+        margin-left: -70px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:999px){
+    .navbar{
+        padding: 1.5rem 3rem;
+    }
+    .nav-logo p{
+        font-size: 1.5rem;
+    }
+    .hamburger-icon{
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 1111;
+    }
+    .hamburger-icon img{
+        width: 100%;
+    }
+    .nav-menu hr{
+        width: 20%;
+    }
+    .nav-menu{
+        padding-top: 60px;
+        font-size: 2rem;
+        position:absolute;
+        background: #f3e5e5;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 500px;
+        left: 0;
+        top: 0;
+        display: none;
+        animation: anim1 0.8s ease-in-out;
+        z-index: 11;
+        backdrop-filter: blur(8px);
+    }
+    @keyframes anim1 {
+        from{
+            opacity: 1;
+            transform: translateY(-500px);
+        }
+        to{
+            opacity:1;
+            transform: translateY(0);
+        }
+    }
+    .nav-menu li{
+        margin-bottom: 40px;
+    }
+    .nav-menu.visible {
+        display: block;
+    }
+    .nav-login-cart button{
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .nav-login-cart img{
+        width: 90%;
+    }
+    .nav-cart-count{
+        margin-left: -70px;
+    }
+}
+@media screen and (max-width:768px){
+    .navbar{
+        padding: 1.5rem;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-logo img{
+        width: 40px;
+    }
+    .nav-logo p{
+        font-size: 15px;
+    }
+    .hamburger-icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        z-index: 2222;
+    }
+    .hamburger-icon img{
+        width: 100%;
+    }
+    .nav-menu hr{
+        width: 20%;
+    }
+    .nav-menu{
+        padding-top: 60px;
+        font-size: 2rem;
+        position:absolute;
+        background: #f3e5e5;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 500px;
+        left: 0;
+        top: 0;
+        display: none;
+        animation: anim2 0.8s ease-in-out;
+        z-index: 11;
+        backdrop-filter: blur(8px);
+    }
+    @keyframes anim2 {
+        from{
+            opacity: 1;
+            transform: translateY(-500px);
+        }
+        to{
+            opacity:1;
+            transform: translateY(0);
+        }
+    }
+    .nav-menu li{
+        margin-bottom: 40px;
+    }
+    .nav-menu.visible {
+        display: block;
+    }
+    .nav-login-cart{
+        gap: 1.5rem;
+    }
+    .nav-login-cart button{
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .nav-login-cart img{
+        width: 90%;
+    }
+    .nav-cart-count{
+        margin-left: -50px;
+    }
+}

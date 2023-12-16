@@ -1,0 +1,118 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 120px;
+    height: 90vh;
+    margin-bottom: 150px;
+}
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.popular hr{
+    width:500px;
+    height: 6px;
+    background:#252525 ;
+    border-radius: 5px;
+}
+.item{
+    border: 1px solid #8c8c8c;
+    border-radius: 0 0 15px 15px;
+}
+
+.popular-item{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.popular-item img{
+    width: 100%;
+}
+.item-name{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    padding-left: 10px;
+}
+.price-info{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.newPrice{
+    font-size: 26px;
+    font-weight: 700;
+}
+.oldPrice{
+    font-size: 26px;
+    font-weight: 700;
+    color: #8c8c8c;   
+    text-decoration: line-through;
+}
+@media screen and (min-width:1000px) and (max-width:1440px) {
+    .popular{
+        padding: 0 60px;
+        height: auto;
+    }
+    .popular h1{
+        font-size: 35px;
+    }
+    .popular hr{
+        width:340px;
+    }
+    .popular-item{
+        gap: 20px;
+    }
+    .price-info{
+        margin-top:-20px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:999px){
+    .popular{
+        padding: 0 60px;
+        height: auto;
+    }
+       .popular h1{
+        font-size: 35px;
+    }
+    .popular hr{
+        width:340px;
+    }
+    .popular-item{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and  (max-width:768px){
+    .popular{
+        padding: 0 20px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .popular h1{
+        font-size: 27px;
+        width: 100%;
+        text-align: center;
+    }
+    .popular hr{
+        width:270px;
+    }
+    .popular-item{
+        width: 100%;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+}

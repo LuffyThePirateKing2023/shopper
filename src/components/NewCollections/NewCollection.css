@@ -1,0 +1,111 @@
+.new-collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 150px;
+    margin: 100px 0;
+    width: 100%;
+}
+.new-collection h1{
+    width: 100%;
+    text-align: center;
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.new-collection hr{
+    width:500px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.collections{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+.collections img{
+    width: 100%;
+}
+.item-name{
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding-left: 10px;
+}
+.price-info{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.newPrice{
+    font-size: 26px;
+    font-weight: 700;
+}
+.oldPrice{
+    font-size: 26px;
+    font-weight: 700;
+    color: #8c8c8c;   
+    text-decoration: line-through;
+}
+@media screen and (min-width:1000px) and (max-width:1440px){
+    .new-collection{
+        padding: 0 50px;
+    }
+    .new-collection{
+        width: 100%;
+        margin:0;
+        margin-top: 100px;
+    }
+    .new-collection h1{
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .new-collection hr{
+        width:300px;
+    }
+    .collections{
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 100%;
+    }
+    .price-info{
+        margin-top:5px;
+        padding-left: 0;
+    }
+    
+}
+@media screen and (min-width:769px) and (max-width:999px){
+    .new-collection h1{
+        font-size: 35px;
+    }
+    .new-collection hr{
+        width:300px;
+    }
+    .collections{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+    }
+}
+@media screen and  (max-width:768px){
+    .new-collection{
+        padding: 0 10px;
+    }
+    .new-collection h1{
+        width: 100%;
+        font-size: 25px
+    }
+    .new-collection hr{
+        width:170px;
+    }
+    .collections{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+}
