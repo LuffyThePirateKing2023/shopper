@@ -14,7 +14,7 @@ import kids_banner from './components/Assets/banner_kids.png';
 function App() {
   return (
     <div>
-      <BrowserRouter basename='shopper'>
+      <BrowserRouter basename='/shopper'>
         <Navbar />
         <Routes>
           <Route path='' element={<Shop />} />
